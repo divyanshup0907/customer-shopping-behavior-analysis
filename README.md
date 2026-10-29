@@ -90,24 +90,6 @@ File: [`customer_behavior_dashboard.pbix`](customer_behavior_dashboard.pbix) (op
 - **Charts:** Revenue and sales by Category, Revenue and sales by Age Group, % of customers by Subscription Status (donut)
 - **Slicers:** Subscription Status, Gender, Category, Shipping Type
 
-## How to Run
-
-```bash
-git clone https://github.com/divyanshup0907/dashboards.git
-cd dashboards
-pip install -r requirements.txt
-```
-
-1. Create a PostgreSQL database named `customer_behavior`.
-2. Set your database password as an environment variable (never hard-code it):
-   ```bash
-   export DB_PASSWORD="your_password"        # Windows PowerShell: $env:DB_PASSWORD="your_password"
-   ```
-3. Run `customer_shopping_behavior_analysis.ipynb` (keep the CSV in the same folder). It cleans the data and creates the `customer` table.
-4. Run the queries in `customer_behavior_sql_queries.sql` in pgAdmin or psql.
-5. Open the `.pbix` file in Power BI Desktop.
-
-The notebook also includes connection snippets for MySQL and SQL Server.
 
 ## Author
 
